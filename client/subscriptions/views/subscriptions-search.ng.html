@@ -1,0 +1,14 @@
+<form>
+  <label>Description</label>
+  <input ng-model="newParty.description">
+  <button ng-click="searchSites()">Search</button>
+</form>
+<ul>
+  <li ng-repeat="site in sites">
+    {{site.collectionName}}
+
+    <p>{{party.artistName}}</p>
+    <button ng-click="subscrive(site)">Assinar</button>
+
+  </li>
+</ul>
